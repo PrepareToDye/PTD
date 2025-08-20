@@ -1,1 +1,202 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Prepare to Dye</title></head><body><h1>Welcome to Prepare to Dye</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prepare to Dye</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fad390);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: white;
+    }
+    nav a {
+      margin: 0 0.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: url('https://i.imgur.com/fu0VKzP.jpg') center/cover no-repeat;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #6c5ce7;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #341f97;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .feature {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+      text-align: center;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prepare to Dye</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#shop">Shop</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="/admin">Admin</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Color Your World with Prepare to Dye</h2>
+    <p>Handmade tie-dye clothing, custom crafts, and unforgettable party experiences.</p>
+    <a href="#shop" class="btn">Shop Now</a>
+    <a href="#services" class="btn">Book a Party</a>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Us</h3>
+    <p>Prepare to Dye is a creative business dedicated to handmade tie-dye clothing, unique crafts, and bringing fun, colorful memories through mobile tie-dye parties. Founded by Mica, it’s all about sparking joy and creativity in every piece and event.</p>
+  </section>
+
+  <section class="section" id="shop">
+    <h3>Shop</h3>
+    <div class="features">
+      <div class="feature">
+        <h4>Tie-Dye Shirts</h4>
+        <p>$25 - Vibrant, hand-dyed shirts for all ages. Each one is unique!</p>
+        <!-- PayPal Buy Now Button Example -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
+          <input type="submit" value="Buy Now with PayPal" class="btn">
+        </form>
+      </div>
+      <div class="feature">
+        <h4>Custom Crafts</h4>
+        <p>Special, made-to-order items for gifts or personal use.</p>
+        <!-- PayPal Buy Now Button Example -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
+          <input type="submit" value="Order Custom with PayPal" class="btn">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h3>Services</h3>
+    <p>We bring the tie-dye fun to you! Perfect for birthdays, family gatherings, and creative parties. Packages start at $100 for 4 guests, with all materials included. Book online and secure your date with a deposit.</p>
+    <!-- Calendly Embed Example -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_USERNAME/tie-dye-party" style="min-width:320px;height:630px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </section>
+
+  <section class="section" id="gallery">
+    <h3>Gallery</h3>
+    <p>Take a look at our creations and past events!</p>
+    <p><em>(Photo gallery coming soon)</em></p>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: <a href="mailto:info@preparetodystore.com">info@preparetodystore.com</a></p>
+    <p>Follow us on Instagram and Facebook for updates and new designs!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Prepare to Dye. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+<!-- Netlify CMS Admin Panel -->
+<!-- Save this as /admin/index.html -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Prepare to Dye CMS</title>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+
+<!-- Netlify CMS Config -->
+<!-- Save this as /admin/config.yml -->
+backend:
+  name: git-gateway
+  branch: main   # or master depending on your repo
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Homepage"
+        name: "homepage"
+        fields:
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "string" }
