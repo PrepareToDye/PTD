@@ -1,3 +1,11 @@
 [build]
   publish = "public"
   command = ""
+
+[[plugins]]
+  package = "netlify-plugin-cms-content"
+  [plugins.inputs]
+    folders = [
+      { folder = "content/products", output = "public/content/products/index.json" },
+      { folder = "content/gallery", output = "public/content/gallery/index.json" }
+    ]
