@@ -5,11 +5,7 @@
 [[plugins]]
   package = "netlify-plugin-cms-content"
   [plugins.inputs]
-    folder = "content/products"
-    output = "public/content/products/index.json"
-
-[[plugins]]
-  package = "netlify-plugin-cms-content"
-  [plugins.inputs]
-    folder = "content/gallery"
-    output = "public/content/gallery/index.json"
+    folders = [
+      { folder = "content/products", output = "public/content/products/index.json" },
+      { folder = "content/gallery", output = "public/content/gallery/index.json" }
+    ]
