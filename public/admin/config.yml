@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: PrepareToDye/PTD   # Replace with your GitHub repo
-  branch: main                               # Replace if your default branch is different
+  repo: PrepareToDye/PTD
+  branch: main
   auth_scope: repo
 
 media_folder: "public/images/uploads"
