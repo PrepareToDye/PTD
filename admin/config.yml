@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "name", label: "Name", widget: "string" }
+      - { name: "description", label: "Description", widget: "text" }
+      - { name: "price", label: "Price", widget: "number" }
+      - { name: "image", label: "Image", widget: "image" }
+      - { name: "paypal", label: "PayPal Button Code", widget: "text" }
+
+  - name: "gallery"
+    label: "Gallery"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "image", label: "Image", widget: "image" }
+      - { name: "description", label: "Description", widget: "text", required: false }
