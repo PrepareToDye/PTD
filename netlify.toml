@@ -9,3 +9,5 @@
       { folder = "content/products", output = "public/content/products/index.json" },
       { folder = "content/gallery", output = "public/content/gallery/index.json" }
     ]
+    npm install -D netlify-plugin-cms-content
+    
